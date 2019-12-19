@@ -1,0 +1,15 @@
+apiVersion: securityenforcement.admission.cloud.ibm.com/v1beta1
+kind: ImagePolicy
+metadata:
+  name: guestbook-subscription
+  namespace: default
+spec:
+  repositories:
+  - name: k8s.gcr.io/*
+    policy:
+      va:
+        enabled: false
+  - name: gcr.io/*
+    policy:
+      va:
+        enabled: false

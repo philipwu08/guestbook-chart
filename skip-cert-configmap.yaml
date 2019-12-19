@@ -1,0 +1,7 @@
+apiVersion: v1
+data:
+  insecureSkipVerify: "true"
+kind: ConfigMap
+metadata:
+  name: skip-cert-verify
+  namespace: default

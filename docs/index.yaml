@@ -1,0 +1,12 @@
+apiVersion: v1
+entries:
+  gbapp:
+  - apiVersion: v1
+    created: 2019-12-19T15:03:42.305661-05:00
+    description: Kubernetes PHP Guestbook application with Redis
+    digest: ef39261e472f670255cea197e79fca9c5df778b58bdb33cf31a6496ee9f15b0a
+    name: gbapp
+    urls:
+    - https://github.ibm.com/Ian-W-Zhang/guestbook-chart/gbapp-0.1.0.tgz
+    version: 0.1.0
+generated: 2019-12-19T15:03:42.303102-05:00

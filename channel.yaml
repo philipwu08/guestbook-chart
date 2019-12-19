@@ -1,0 +1,24 @@
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: ch-helm
+---
+apiVersion: app.ibm.com/v1alpha1
+kind: Channel
+metadata:
+  name: hub-local-helm-repo
+  namespace: ch-helm
+spec:
+    type: HelmRepo
+    pathname: https://github.ibm.com/Ian-W-Zhang/guestbook-chart
+    configRef:
+      name: skip-cert-verify
+---
+apiVersion: v1
+data:
+  insecureSkipVerify: "true"
+kind: ConfigMap
+metadata:
+  name: skip-cert-verify
+  namespace: ch-helm

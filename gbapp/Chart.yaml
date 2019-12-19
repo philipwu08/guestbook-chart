@@ -1,0 +1,4 @@
+apiVersion: v1
+description: Kubernetes PHP Guestbook application with Redis
+name: gbapp
+version: 0.1.0

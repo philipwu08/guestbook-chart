@@ -11,7 +11,7 @@ metadata:
   namespace: ch-helm
 spec:
     type: HelmRepo
-    pathname: https://github.ibm.com/Ian-W-Zhang/guestbook-chart
+    pathname: https://ianzhang366.github.io/guestbook-chart/
     configRef:
       name: skip-cert-verify
 ---

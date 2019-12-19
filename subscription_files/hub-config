@@ -1,0 +1,18 @@
+apiVersion: v1
+clusters:
+- cluster:
+    insecure-skip-tls-verify: true
+    server: https://api.gangs.os.fyre.ibm.com:6443
+  name: gangs
+contexts:
+- context:
+    cluster: gangs
+    user: admin
+  name: admin
+current-context: admin
+kind: Config
+preferences: {}
+users:
+- name: admin
+  user:
+    token: eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJkZWZhdWx0LXRva2VuLWQ1Ym1iIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQubmFtZSI6ImRlZmF1bHQiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC51aWQiOiIyMjJjNGFiNS0xODIyLTExZWEtOWIzMy0wMDAwMGExMDA1MjAiLCJzdWIiOiJzeXN0ZW06c2VydmljZWFjY291bnQ6a3ViZS1zeXN0ZW06ZGVmYXVsdCJ9.ht4-8aKb0-CXM8vfS2AzK_zLb_bEoEvUkgbbb9Rt-_On_AuY5XFAgi1MSI-9LDcrcdUNKS4kwqUM9GESALmMlH3jcMylKrlMT-Bq346Jpg3_qXxafgBsjc9uLF4s19A6D7tEH3l7i_Yq7iR-VKuyC8kSztHYST8O8Gx1nVGMCS-lANjUT378_HFnjrYtUOQoCAHEZCmv9Y1SwDnLUYgXfhZyRWMWSnpeKfXTLMMgdgEUHVDN-h5fTjIiiSjkLe6ldWdYBeOOFiB-cYu1QWlf-pP_1KT0l263BWwI4fQd_9YY133-FQR2F6c6A1a--dyt_zCxwXH4RvHV5a9OkLxnNw
